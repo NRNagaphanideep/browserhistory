@@ -1,55 +1,65 @@
 .history {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
+  padding: 16px;
 }
 
+.time-stamp {
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .domain-details-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  align-items: flex-start;
+  margin-right: 32px;
+}
+.domain-logo {
+  width: 28px;
+  margin-right: 16px;
+}
+.title {
+  color: #475569;
+  font-weight: 500;
+  font-size: 16px;
+}
+.domain-url {
+  color: #64748b;
+  font-size: 16px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.delete-icon {
+  width: 22px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .history {
-    padding: 10px 20px 10px 20px;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .domain-details-container {
-    width: 85%;
-  }
-  .domain-details {
     display: flex;
     align-items: center;
-    width: 90%;
+    margin-bottom: 16px;
   }
-  .time {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto';
-    color: #64748b;
-    font-weight: 500;
+  .content {
+    flex-grow: 1;
   }
-  .title {
-    margin-right: 8px;
-    font-family: 'Roboto';
+  .time-stamp {
+    margin: unset;
+    margin-right: 48px;
   }
-  .domain-logo {
-    margin-right: 8px;
-    width: 30px;
+  .domain-details-container {
+    align-items: center;
+    flex-grow: 1;
   }
-  .domain-url {
-    font-family: 'Roboto';
-    color: #64748b;
-  }
-  .delete-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  .domain-content {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
   }
 }
